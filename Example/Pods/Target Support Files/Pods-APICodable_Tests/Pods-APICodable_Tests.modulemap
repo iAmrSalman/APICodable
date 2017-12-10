@@ -1,0 +1,6 @@
+framework module Pods_APICodable_Tests {
+  umbrella header "Pods-APICodable_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

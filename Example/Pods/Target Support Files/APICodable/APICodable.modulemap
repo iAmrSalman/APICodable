@@ -1,0 +1,6 @@
+framework module APICodable {
+  umbrella header "APICodable-umbrella.h"
+
+  export *
+  module * { export * }
+}

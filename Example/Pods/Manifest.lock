@@ -1,0 +1,19 @@
+PODS:
+  - APICodable (0.1.0):
+    - Dots (~> 0.4.5)
+  - Dots (0.4.5)
+
+DEPENDENCIES:
+  - APICodable (from `../`)
+
+EXTERNAL SOURCES:
+  APICodable:
+    :path: ../
+
+SPEC CHECKSUMS:
+  APICodable: 7420d0b54e954278a2aefa2b946bf8249030fa94
+  Dots: c02a544718ec1aca83fd74cb90ae6704f068a9cb
+
+PODFILE CHECKSUM: c37f266a5277197cdea59b5fc5afa467fd325a25
+
+COCOAPODS: 1.3.1

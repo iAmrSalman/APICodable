@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'APICodable'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of APICodable.'
+  s.summary          = 'From Restful API to codable struct.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Network manager to handel restful api requests
                        DESC
 
   s.homepage         = 'https://github.com/iAmrSalman/APICodable'
@@ -26,9 +26,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'iAmrSalman' => 'iamrsalman@gmail.com' }
   s.source           = { :git => 'https://github.com/iAmrSalman/APICodable.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/@iAmrSalman'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'APICodable/Classes/**/*'
   
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Dots', '~> 0.4.5'
 end
