@@ -8,7 +8,7 @@
 import Foundation
 import Dots
 
-class Request<Base: APIBase, ReturnType: Returnable> {
+public class Request<Base: APIBase, ReturnType: Returnable> {
     
     //MARK: - Aliases
     
@@ -17,11 +17,10 @@ class Request<Base: APIBase, ReturnType: Returnable> {
     
     //MARK: - Properties
     
-    var success: Success?
-    var failure: Failure?
+    internal var success: Success?
+    internal var failure: Failure?
     
     var requestMethod: HTTPMethod
-    //FIXME: - Add your base url
     var path: String
     var parameters: [String: Any]?
     var completeURL: String {
@@ -40,7 +39,7 @@ class Request<Base: APIBase, ReturnType: Returnable> {
     
     //MARK: - Actions
     
-    func perform(onSuccess: Success? = nil, onFaild: Failure? = nil) {
+    public func perform(onSuccess: Success? = nil, onFaild: Failure? = nil) {
         
         self.success = onSuccess ?? self.success
         self.failure = onFaild ?? self.failure
@@ -98,28 +97,28 @@ class Request<Base: APIBase, ReturnType: Returnable> {
     
     //MARK: - Alternative Initializers
     
-    static func GET(_ path: String,
+    static open func GET(_ path: String,
                     parameters: [String : Any]? = nil) -> Request {
         let request = Request<Base, ReturnType>(.get, path: path, parameters: parameters)
         request.perform()
         return request
     }
     
-    static func POST(_ path: String,
+    static open func POST(_ path: String,
                      parameters: [String : Any]? = nil) -> Request {
         let request = Request<Base, ReturnType>(.post, path: path, parameters: parameters)
         request.perform()
         return request
     }
     
-    static func PUT(_ path: String,
+    static open func PUT(_ path: String,
                     parameters: [String : Any]? = nil) -> Request {
         let request = Request<Base, ReturnType>(.put, path: path, parameters: parameters)
         request.perform()
         return request
     }
     
-    static func DELETE(_ path: String,
+    static open func DELETE(_ path: String,
                        parameters: [String : Any]? = nil) -> Request {
         let request = Request<Base, ReturnType>(.get, path: path, parameters: parameters)
         request.perform()

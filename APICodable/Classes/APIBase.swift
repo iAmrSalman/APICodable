@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol APIBase {
+public protocol APIBase {
     static var baseURL: String {get}
     static var headers: [String: String]? {get}
 }
