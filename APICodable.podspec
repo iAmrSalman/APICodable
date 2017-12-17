@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'APICodable'
   s.version          = '0.1.0'
-  s.summary          = 'From Restful API to codable struct.'
+  s.summary          = 'From Restful API to codable object.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Network manager to handel restful api requests
+manage your restful api requests easy and efficiently.
                        DESC
 
   s.homepage         = 'https://github.com/iAmrSalman/APICodable'
