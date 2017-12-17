@@ -2,7 +2,7 @@
   "name": "APICodable",
   "version": "0.1.0",
   "summary": "From Restful API to codable struct.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "Network manager to handel restful api requests",
   "homepage": "https://github.com/iAmrSalman/APICodable",
   "license": {
     "type": "MIT",
